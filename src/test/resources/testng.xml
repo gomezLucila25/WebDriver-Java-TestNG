@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Gmail Automation Suite" verbose="2">
+
+    <test name="Login and Logout Tests">
+        <groups><run><include name="smoke"/></run></groups>
+        <classes>
+            <class name="com.epam.tat.tests.LoginLogoutTest"/>
+        </classes>
+    </test>
+
+    <test name="Draft Mail Tests">
+        <groups><run><include name="regression"/></run></groups>
+        <classes>
+            <class name="com.epam.tat.tests.DraftMailTest"/>
+        </classes>
+    </test>
+
+    <test name="Send Mail Tests">
+        <groups><run><include name="regression"/></run></groups>
+        <classes>
+            <class name="com.epam.tat.tests.SendMailTest"/>
+        </classes>
+    </test>
+
+</suite>
